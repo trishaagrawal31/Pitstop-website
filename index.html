@@ -157,7 +157,6 @@
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-3xl font-extrabold font-['Audiowide']" style="color: white var(--accent-color);">
               <span style="color:red;">Pitstop</span> Motorsports Club
-              <span style="color:red;">Pitstop</span> Motorsports Club
             </a>
             <ul class="flex space-x-8">
                 <li><a href="#about" class="text-white hover:text-orange-500 transition-colors duration-300"><strong>About</strong></a></li>
@@ -183,11 +182,6 @@
                     <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
             </div>
-            <div class="absolute bottom-10 animate-bounce">
-                <svg class="w-8 h-8 text-red-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </div>
         </section>
 
         <section id="about" class="container mx-auto px-4 py-20 text-center">
@@ -198,7 +192,6 @@
         </section>
 
         <section id="events" class="bg-gray-900 py-20">
-            <div class="container mx-auto px-4 text-center" style="align-items: center;" >
             <div class="container mx-auto px-4 text-center" style="align-items: center;" >
                 <h2 class="text-4xl font-bold section-header">Upcoming Events</h2>
                 <div id="event-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -227,16 +220,8 @@
                         <h3 class="text-2xl font-bold font-['Audiowide'] text-white mb-1">Aakaar</h3>
                         <p class="font-semibold mb-3" style="color: var(--accent-color);">Treasurer</p>
                         <p class="text-gray-400 text-sm">Global Business Management</p>
-                        <img src="./images/pic.jpeg" alt="Board Member Alex Lee" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 object-cover" >
-                        <h3 class="text-2xl font-bold font-['Audiowide'] text-white mb-1">Aakaar</h3>
-                        <p class="font-semibold mb-3" style="color: var(--accent-color);">Treasurer</p>
-                        <p class="text-gray-400 text-sm">Global Business Management</p>
                     </div>
                     <div class="card-item bg-gray-900 p-6 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="./images/pic.jpeg" alt="Board Member Maria Chen" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 object-cover" >
-                        <h3 class="text-2xl font-bold font-['Audiowide'] text-white mb-1">Trisha Agrawal</h3>
-                        <p class="font-semibold mb-3" style="color: var(--accent-color);">Web Manager</p>
-                        <p class="text-gray-400 text-sm">Computing and Information Technology</p>
                         <img src="./images/pic.jpeg" alt="Board Member Maria Chen" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 object-cover" >
                         <h3 class="text-2xl font-bold font-['Audiowide'] text-white mb-1">Trisha Agrawal</h3>
                         <p class="font-semibold mb-3" style="color: var(--accent-color);">Web Manager</p>
@@ -249,8 +234,6 @@
         <section id="contact" class="bg-gray-900 py-20 text-center">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold section-header mb-8">Get In Touch</h2>
-                <p class="max-w-2xl mx-auto text-gray-400 mb-12">
-                    Ready to feel the speed? Follow us on our socials or send us an email to get involved.
                 <p class="max-w-2xl mx-auto text-gray-400 mb-12">
                     Ready to feel the speed? Follow us on our socials or send us an email to get involved.
                 </p>
@@ -311,16 +294,7 @@
                 
                 card.style.backgroundImage = `url('${event.image}')`;
 
-                
-                card.classList.add('card-item', 'bg-gray-800', 'rounded-xl', 'shadow-lg', 'transform', 'hover:scale-105', 'transition-transform', 'duration-300', 'ease-in-out', 'event-card-bg');
-                
-                card.style.backgroundImage = `url('${event.image}')`;
-
                 card.innerHTML = `
-                    <div class="event-card-content">
-                        <h3 class="text-2xl font-bold font-['Audiowide'] mb-2" style="color: var(--accent-color);">${event.title}</h3>
-                        <p class="text-gray-300">${event.date}</p>
-                    </div>
                     <div class="event-card-content">
                         <h3 class="text-2xl font-bold font-['Audiowide'] mb-2" style="color: var(--accent-color);">${event.title}</h3>
                         <p class="text-gray-300">${event.date}</p>
